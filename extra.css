@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+button, html, body, h1, h2, h3, ul, li, a, p, 
+article, aside, footer, header, main, nav, section {
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+	color: white;
+	height: 110px;
+	font-size: 35px;
+	font-variant: small-caps;
+	padding: 40px 40px;
+	background-color: #531333;
+}
+
+body {
+	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	background-olor: #f0f0f0;
+	background-color: #000000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 25px;
+}
+
+.meny {
+	background: -webkit-linear-gradient(#800A4A, #ff1493); /* Safari */
+    background: -o-linear-gradient(#800A4A, #ff1493); /* Opera */
+    background: -moz-linear-gradient(#800A4A, #ff1493); /* Firefox */
+    background: linear-gradient(#800A4A, #ff1493); /* Standard */
+	margin-top: 1px;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+#meny li a {
+	color:white;
+}
+
+#meny li {
+	display: inline;
+	padding: 20px;
+	margin-right: 15px;
+	font-size: 25px;
+	font-variant: Gill Sans;
+	font-weight: bold;
+}
+
+section {
+	background-color:rgba(190,15,110,0.5);
+	border-radius: 7px;
+}
+
+li a {
+	color: black;
+}
+
+#lista li {
+	padding: 1px;
+	margin-left: 0px;
+	font-size: 18px;
+	font-variant: Arial;
+	font-weight: bold;
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h3 {
+	font-variant: small-caps;
+	font-size: 40px;
+	font-weight: 750;
+	margin-bottom: -15px;
+	margin-left: 25px;
+	margin-right: 20px;
+	padding: 10px;
+	color: #ffffff;
+	width: 150px;
+}
+
+footer {
+	clear: both;
+	margin-top: 30px;
+	font-size: 15px;
+	background-color:rgba(190,15,110,0.5);
+	color: grey;
+	padding: 5px 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+main {
+
+}
+aside {
+		float: right;
+		width: 342px;
+		margin-top: 0px;
+}
+
+topsak{
+	float: left;
+	width: 200px;
+}
+
+.button {
+	padding: 15px;
+	width: 200px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius:5px;
+	-webkit-transition: 0.25s ease-in-out;
+	background: -o-linear-gradient(#ff1493, #800A4A)
+}
+
+.button-primary {
+	background: -webkit-linear-gradient(#800A4A, #ff1493); /* Safari */
+    background: -o-linear-gradient(#800A4A, #ff1493); /* Opera */
+    background: -moz-linear-gradient(#800A4A, #ff1493); /* Firefox */
+    background: linear-gradient(#800A4A, #ff1493); /* Standard */
+	color: white;
+}
+
+.button-primary:hover {
+    background: -o-linear-gradient(#ff1493, #800A4A); /* Opera */
+    background: -moz-linear-gradient(#ff1493, #800A4A); /* Firefox */
+    background: linear-gradient(#ff1493, #800A4A); /* Standard */
+	background: -webkit-linear-gradient(#ff1493, #800A4A); /* Safari */
+}	
+
+.button-primary:active {
+	background: #BF0F6E;
+	background: -webkit-linear-gradient(#800A4A, #990C59); /* Safari */
+    background: -o-linear-gradient(#800A4A, #990C59); /* Opera */
+    background: -moz-linear-gradient(#800A4A, #990C59); /* Firefox */
+    background: linear-gradient(#800A4A, #990C59); /* Standard */
+}
+
+.button2 {
+	-webkit-transition: 0.25s ease-in-out;
+	padding: 8px;
+	width: 210px;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;	
+
+
+}
+
+.button2-primary {
+	background: #707070;
+	color:#fff
+}
+
+.button2-primary:hover {
+	background: #858585;
+	-webkit-transform: translate(-1em,0);
+}	
+
+.button2-primary:active {
+	background: #5a5a5a;
+}
+
+.center {
+	text-align:center;
+}
+
+.video { /*finns inte längre*/
+	float: right;
+	width: 512px;
+	margin-right: 100px;
+	margin-top: 55px;	
+}
+
+.ämne {
+	width: 240px;
+}
+
+.verktyg {
+	width: 240px;
+}
+
+.eurest {
+	float: left;
+	width: 720px;
+	height: 400px;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	float: right;
+
+}
+
+.sharepoint {
+	background-color: #ff1493;
+	margin-top: 0px;
+	margin-bottom: -60px;
+	float: center;
+	margin-left: 305px;
+	width: 350px;
+	border-radius: 0px;
+	height: 50px;
+}
+
+
+
+.verktygtxt {
+	margin-top: 5px;
+}
+
+select {
+	float: right;
+	padding: 0px;
+	margin-top: -20px;
+	width: 200px;
+	font-size: 20px;
+	color: white;
+	background-color: #ff1493;
+}
+
+select:hover {
+	background-color: #800A4A;
+}
+
+.spotify {
+	float: right;
+	padding: 20px;
+}
+
+.ämnetxt {
+	margin-top: 0px;
+}
+
+#schemadiv {
+	width: 720px;
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+	float: right;
+	padding: 10px;
+	float: right;
+}
+
+#schema {
+	position: absolute;
+	top: -160px;
+	left: -238px;
+	width: 955px;
+	height: 600px;
+}
+
+
+
+{}
+
+
+
+

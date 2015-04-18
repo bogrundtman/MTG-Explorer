@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <title>MTGExplorer v1.3</title>
+	 <link rel="stylesheet" type="text/css" href="extra.css">
+  <script>
+  window.loadedtimes = 0;
+  </script>
+  </head>
+  <body onload="document.getElementById('inloggning').submit();">
+  	<form id="inloggning" target="schema" name="userForm" action="https://sms.schoolsoft.se/scania/jsp/Login.jsp" method="post">
+		<input type="hidden" name="action" value="login" />
+		<input type="hidden" value="1" name="usertype" />
+		<input type="hidden" name="ssusername" value=""/>
+		<input type="hidden" name="sspassword" value=""/>
+		<input type="hidden" name="button" value="Logga in" />
+	</form>
+    <header class="banner">
+	<topsak>
+      <h2>MTGExplorer</h2>
+	  <p>version 1.3</p>
+	</topsak>
+	    <aside>
+	      <img src="mtglogga.png" alt="logga" height="139px" width="320px"
+	    </aside>  
+    </header>
+	
+	
+	
+	<nav class="meny">
+	  <div id="meny">
+	  <ul>
+	    <li><a href="https://malardalenstekniska.sharepoint.com" target="_blank" class="button button-primary">Sharepoint</a></li>
+		<li><a href="https://sms.schoolsoft.se/scania" target="_blank" class="button button-primary">Schoolsoft</a></li>
+		<li><a href="https://www.facebook.com/" target="_blank" class="button button-primary">Facebook</a></li>
+	  </ul>
+	  </div>
+	</nav>
+	
+	<main>
+	
+	<div id="lista">
+	    <h3 class="ämnetxt" >Ämnen</h3>	
+		<section>
+		<nav class="schema" id="schemadiv">
+				<iframe scrolling="no" class="schema" id="schema" name="schema" src="about:blank" onload="if(window.loadedtimes == 1){document.getElementById('schema').src='https://sms.schoolsoft.se/scania/jsp/student/right_student_schedule.jsp?menu=schedule';window.loadedtimes=2}else if(window.loadedtimes==0){window.loadedtimes = 1;}">
+				</iframe>
+		</nav>
+	  <nav class="ämne">
+		<div class="txtclass">
+	    <ul>
+	      <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Matematik%205.aspx" target="_blank" class="button2 button2-primary" "civilu">Matematik 5</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Matematik4.aspx" target="_blank" class="button2 button2-primary">Matematik 4</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Fysik2.aspx" target="_blank" class="button2 button2-primary">Fysik 2</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Teknik1.aspx?RootFolder=%2Fsites%2FElev%2FDokument%20Teknik%201%2F2014-15&FolderCTID=0x012000075EC4A0CB914141B86948716C3C2C04&View=%7BFBFF91D6-D564-4383-A6FF-CD646EBC0260%7D" target="_blank" class="button2 button2-primary">Teknik</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Historia1a1.aspx" target="_blank" class="button2 button2-primary">Historia 1a1</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Samh%C3%A4llskunskap%201b.aspx" target="_blank" class="button2 button2-primary">Samhällskunskap 1b</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Engelska%207.aspx" target="_blank" class="button2 button2-primary">Engelska 7</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Svenska3.aspx" target="_blank" class="button2 button2-primary">Svenska 3</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Kemi%201.aspx" target="_blank" class="button2 button2-primary">Kemi 1</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/M%C3%A4t-%20och%20reglerteknik.aspx" target="_blank" class="button2 button2-primary">Mät- och reglerteknik</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/M%C3%A4t-%20och%20styrteknik.aspx" target="_blank" class="button2 button2-primary">Mät- och styrteknik</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SitePages/Avhj%C3%A4lpande%20underh%C3%A5ll%201.aspx" target="_blank" class="button2 button2-primary">Avhjälpande underhåll 1</a></li>
+		  
+	    </ul>
+		</div>
+	  </nav>
+	  </section>
+	    <h3 class="verktygtxt" >Verktyg</h3>
+	  <section>
+	  
+	  	<nav class="eurest">
+			<form name="aspnetForm" method="post" action="" id="aspnetForm">
+				<iframe height="400" marginheight="0" marginwidth="0" frameborder="0" width="720" src="https://eurest.mashie.eu/public/menu/sj%C3%B6kringlan/9104e9a0">
+				</iframe>
+            </form>
+		</nav>
+	  <nav class="verktyg">
+		<div class="txtclass">
+		<ul>
+		  <li><a href="https://www.desmos.com/calculator" target="_blank" class="button2 button2-primary">DesmosCalculator</a></li>
+		  <li><a href="https://elevpuls.azurewebsites.net/" target="_blank" class="button2 button2-primary">Matris (ElevPuls)</a></li>
+		  <li><a href="https://malardalenstekniska.sharepoint.com/sites/Elev/SiteAssets/SitePages/Startsida/strukturbild.PNG" target="_blank" class="button2 button2-primary">Utbildningsplan</a></li>
+		  <li><a href="http://www.compass-group.se/restauranger/Scania-start/Scania-Sodertalje/Restaurang-Sjokringlan/Dagens-lunch-/" target="_blank" class="button2 button2-primary">Eurest</a></li>
+		  <li><a href="http://www.bredbandskollen.se/" target="_blank" class="button2 button2-primary">Bredbandskollen</a></li> 
+		  <li><a href="http://www.ne.se/?i_ne.se.id=548995623" target="_blank" class="button2 button2-primary">NE.se</a></li>
+		  <li><a href="https://portal.office.com/OLS/MySoftware.aspx" target="_blank" class="button2 button2-primary">Office Download</a></li>
+		</ul>
+		
+
+		</div>
+	  </nav>
+	  </section>
+	</div>
+
+	</main>
+	
+	<footer>
+	  <p><b>MTGExplorer v1.3</b></p><br><p>Oscar Markström & Marcus Ruderer</p><a>Albin Swag</a>
+	</footer>
+  </body>
+  
