@@ -1,0 +1,20 @@
+    function caller(url) {
+        if(url==null) url = "http://127.0.0.1:8800/sl/?siteid=7562&timewindow=60";
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        
+        xhr.onload = function (e) {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              data = JSON.parse(xhr.responseText);
+            } else {
+              console.error(xhr.statusText);
+            }
+          }
+        };
+        xhr.onerror = function (e) {
+          console.error(xhr.statusText);
+        };
+        xhr.send(null);
+    
+    }
